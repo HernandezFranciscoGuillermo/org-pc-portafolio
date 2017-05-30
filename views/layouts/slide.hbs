@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700"  type="text/css">
+    <link rel="stylesheet" href="/assets/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="/assets/revealjs/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="/assets/css/presenter.css" type="text/css" />
+    <!--<link rel="stylesheet" href="/assets/css/dist/0433c424-127d-4bda-8ea4-cc5a37252e7f-fa2ef549-3408-4f95-8cd1-545982ec6594.min.css">-->
+    <title>{{nombre}}</title>
+</head>
+<body>
+<!--<form class="login">
+    <span>What's your secret key?</span>
+    <input type="password" placeholder="Please enter your secret key!"/>
+    <input type="submit" value="➡" />
+</form>
+<div class="reveal blurred">-->
+<div class="reveal">
+    <div class="slides">
+    {{{body}}}
+    </div>
+</div>
+<!-- Including the JS libraries that we use -->
+<!--<script src="/libs/jquery/dist/jquery.min.js"></script>-->
+<!-- Reveal.js is for presentations -->
+<!--<script src="/assets/revealjs/lib/js/head.min.js"></script>-->
+<!--<script src="/assets/revealjs/js/reveal.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>-->
+<!-- Socket.io library -->
+<!--<script src="/socket.io/socket.io.js"></script>-->
+<!--<script src="/assets/js/presenter.js"></script>-->
+
+<script src="/assets/js/dist/0433c424-127d-4bda-8ea4-cc5a37252e7f-fa2ef549-3408-4f95-8cd1-545982ec6594.min.js"></script>
+<!--<script src="/libs/typer.js/dist/typer.min.js"></script>-->
+
+<script>
+    (function($) {
+        "use strict";
+        $('[data-typer-targets]').typer();
+    })(jQuery);
+</script>
+</body>
+</html>

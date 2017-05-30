@@ -1,0 +1,20 @@
+{{#switch user}}
+    {{#case "25-1580-2014"}}
+        {{> 25-1580-2014}}
+    {{/case}}
+    {{#case "25-0740-2014" break=true}}
+        {{> 25-0740-2014}}
+    {{/case}}
+    {{#case "25-4981-2014" break=true}}
+        {{> 25-4981-2014}}
+    {{/case}}
+    {{#case "25-0126-2012" break=true}}
+        {{> 25-0126-2012}}
+    {{/case}}
+    {{#case "25-0472-2013" break=true}}
+        {{> 25-0472-2013}}
+    {{/case}}
+    {{#default break=true}}
+
+    {{/default}}
+{{/switch}}

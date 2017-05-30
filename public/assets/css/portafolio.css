@@ -1,0 +1,45 @@
+
+html { 
+    overflow-y: hidden;
+}
+
+.utec{
+	font-family: superclarendonbold_italic;
+	color: #561739;
+}
+
+
+.icon{
+	height: 42px;
+	width: 42px;
+	fill: #fff;
+    padding: 4px;
+}
+
+.delay:hover{
+    background-color: #942a63;
+}
+		
+*{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+    user-select: none;
+	cursor: initial;
+}
+
+img {
+	-webkit-user-drag: none;
+    -khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+h1, h2, h3{
+	font-family: "sinkin_sans100_thin";
+}
+
+.container{
+  padding:0px;
+  width:75%;
+}

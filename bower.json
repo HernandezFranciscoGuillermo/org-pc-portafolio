@@ -1,0 +1,29 @@
+{
+  "name": "org-pc-portafolio",
+  "description": "portafolio for ...",
+  "main": "bin/www",
+  "authors": [
+    "HernandezFranciscoGuillermo <Hernandez.FranciscoGuillermo@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/HernandezFranciscoGuillermo/org-pc-portafolio",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.4",
+    "angular-material": "^1.1.4",
+    "jquery.nicescroll": "nicescroll#^3.7.0",
+    "modernizr": "^3.5.0",
+    "bootstrap": "^3.3.7",
+    "pdfjs-dist": "^1.8.391",
+    "typed.js": "typed-js#^1.1.7",
+    "typer.js": "typer#^1.2.0"
+  }
+}

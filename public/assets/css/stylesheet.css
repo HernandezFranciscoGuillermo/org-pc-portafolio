@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('/assets/font/roboto-thin/roboto-thin-webfont.woff2') format('woff2'),
+         url('/assets/font/roboto-thin/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

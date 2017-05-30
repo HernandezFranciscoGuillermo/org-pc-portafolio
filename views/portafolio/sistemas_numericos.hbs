@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!--<link rel="stylesheet" href="/libs/angular-material/angular-material.min.css">-->
+    <!--<link rel="stylesheet" href="/assets/css/sistemas_numericos.css">-->
+    <link rel="stylesheet" href="/assets/css/dist/7b07f02e-96fd-40e7-bc85-fe4258244fee-6788e315-f932-4250-b021-e6a4cb370ab4.min.css">
+</head>
+<body data-ng-controller="app-controller">
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <% appname %>
+    </div>
+</md-toolbar>
+<md-card>
+    <div layout="row">
+        <div flex>
+            <md-card-content>
+            <span class="ww-number">
+              <% numero %> <sub> <% base %> </sub>
+            </span>
+            </md-card-content>
+        </div>
+        <span class="ww-number ww-sign">
+                »
+        </span>
+        <div flex>
+            <md-card-content>
+            <span class="ww-number">
+              <% destino %> <sub> <% based %> </sub>
+            </span>
+            </md-card-content>
+        </div>
+    </div>
+</md-card>
+
+<md-card>
+    <md-card-content>
+        <div layout="row">
+            <div flex>
+                <md-input-container class="md-icon-float md-icon-right md-block">
+                    <label>N&uacute;mero</label>
+                    <input ng-model="numero" type="number" data-ng-change="calculate()">
+                </md-input-container>
+                <md-select ng-model="base" placeholder="base" class="md-no-underline" data-ng-change="calculate()">
+                    <md-option value="2">binario</md-option>
+                    <md-option value="3">3</md-option>
+                    <md-option value="4">4</md-option>
+                    <md-option value="5">5</md-option>
+                    <md-option value="6">6</md-option>
+                    <md-option value="7">7</md-option>
+                    <md-option value="8">octal</md-option>
+                    <md-option value="9">9</md-option>
+                    <md-option value="10">decimal</md-option>
+                    <md-option value="16">hexadecimal</md-option>
+                </md-select>
+            </div>
+
+            <div flex>
+                <md-input-container class="md-icon-float md-icon-right md-block" >
+                    <label>N&uacute;mero</label>
+                    <input ng-model="destino" type="number" step="1" value="" readonly>
+                </md-input-container>
+
+                <md-select ng-model="based" placeholder="base" class="md-no-underline" data-ng-change="calculate()">
+                    <md-option value="2">binario</md-option>
+                    <md-option value="3">3</md-option>
+                    <md-option value="4">4</md-option>
+                    <md-option value="5">5</md-option>
+                    <md-option value="6">6</md-option>
+                    <md-option value="7">7</md-option>
+                    <md-option value="8">octal</md-option>
+                    <md-option value="9">9</md-option>
+                    <md-option value="10">decimal</md-option>
+                    <md-option value="16">hexadecimal</md-option>
+                </md-select>
+            </div>
+        </div>
+    </md-card-content>
+</md-card>
+<footer>
+    <div layout="row" layout-align="center center">
+        <h2> <% appinfo %> &copy;</h2>
+    </div>
+</footer>
+<!--<script src="/libs/angular/angular.min.js"></script>-->
+<!--<script src="/libs/angular-animate/angular-animate.min.js"></script>-->
+<!--<script src="/libs/angular-aria/angular-aria.min.js"></script>-->
+<!--<script src="/libs/angular-messages/angular-messages.min.js"></script>-->
+<!--<script src="/libs/angular-material/angular-material.min.js"></script>-->
+<!--<script src="/assets/js/sistemas_numericos.js"></script>-->
+<script src="/assets/js/dist/7b07f02e-96fd-40e7-bc85-fe4258244fee-6788e315-f932-4250-b021-e6a4cb370ab4.min.js"></script>
+</body>
+</html>

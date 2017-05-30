@@ -1,0 +1,33 @@
+{
+  "name": "org-pc-portafolio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "dompurify": "^0.9.0",
+    "express": "~4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-hbs": "^1.0.4",
+    "express-minify-html": "^0.11.3",
+    "handlebars-helper-include": "^0.2.0",
+    "hbs": "~4.0.1",
+    "moment": "^2.18.1",
+    "morgan": "~1.7.0",
+    "node-env-file": "^0.1.8",
+    "serve-favicon": "~2.3.0",
+    "walk": "^2.3.9",
+    "xss-filters": "^1.2.7"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-uglify": "^3.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+html{
+    font-family: 'robotothin';
+    
+}
+body{
+  /*background-image: url('image1.png');*/
+  background-blend-mode: multiply;
+}
+ .toolbardemoScrollShrink .face {
+  width: 48px;
+  margin: 16px;
+  border-radius: 48px;
+  border: 1px solid #ddd; }
+
+  .ww-number{
+    font-size: 4.5em;
+    color: #272727;
+    line-height: 3em;
+  }
+
+  @media (max-width: 360px) {
+  .ww-number{
+    font-size: 1.5em;
+    color: #272727;
+  }
+}
+
+.md-toolbar-tools{
+  /*background-color: #4DD0E1;*/
+  font-weight: bold;
+  background-color: #561739;
+}
+
+.ww-sign{
+  position: relative;
+  bottom: -10px;
+}
