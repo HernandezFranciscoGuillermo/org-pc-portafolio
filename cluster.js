@@ -14,5 +14,6 @@ if (cluster.isMaster) {
     });
 } else {
 
-    require("./bin/www");
+    console.log('hi');
+    //require("./bin/www");
 }
