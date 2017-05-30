@@ -164,7 +164,7 @@ app.use('production', function(){
 app.use(function(err, req, res, next) {
   // set locals, only providing errors in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === process.env.APP_ENV ? err : {};
+  res.locals.error = req.app.get('env') === 'production'? err : {};
 
   // render the errors page
   res.status(err.status || 500);
