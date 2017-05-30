@@ -11,6 +11,31 @@ var exphbs       = require('express-handlebars');
 
 
 /**
+ * App initialization
+ */
+
+var app = express();
+env(__dirname + '/.env');
+
+
+/**
+ *
+ */
+
+app.use(function(req, res, next){
+  //res.header('Cache-Control','nocache, no-store, max-age=0, must-revalidate');
+  //res.header('X-Frame-Options','deny');
+  //res.header('X-Frame-Options','ALLOW-FROM /');
+  res.header('X-Content-Type-Options', 'nosniff');
+  //res.header('Pragma','no-cache');
+  res.header('x-powered-by','Code, love and Github');
+  res.header('Server','Mind Server');
+  res.header('X-XSS-Protection','1; mode=block');
+  res.removeHeader("x-you-know-whats-awesome");
+  next();
+});
+
+/**
  * Controllers
  */
 
@@ -22,12 +47,6 @@ var utils = require('./controllers/utilidades');
 var slide = require('./controllers/slide');
 var viewr = require('./controllers/viewer');
 
-/**
- * App initialization
- */
-
-var app = express();
-    env(__dirname + '/.env');
 
 /**
  *  Set-up views
@@ -54,21 +73,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'),{ maxAge: 31557600000 }) );
 
-/**
- *
- */
-
-app.use(function(req, res, next){
-  //res.header('Cache-Control','nocache, no-store, max-age=0, must-revalidate');
-  //res.header('X-Frame-Options','deny');
-  //res.header('X-Frame-Options','ALLOW-FROM /');
-  res.header('X-Content-Type-Options', 'nosniff');
-  //res.header('Pragma','no-cache');
-  res.header('x-powered-by','Github');
-  res.header('Server','Mind Server');
-  res.header('X-XSS-Protection','1; mode=block');
-  next();
-});
 
 /**
  *
