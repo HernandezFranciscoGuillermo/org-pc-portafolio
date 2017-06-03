@@ -1,7 +1,3 @@
-//$(function(){
-
-	
-	
 	function showOverlay(url){
 		createDemo(url);
 		//showDemo();

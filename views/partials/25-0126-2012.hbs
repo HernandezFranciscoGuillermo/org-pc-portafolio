@@ -1,3 +1,11 @@
+<style>
+    .pra{
+        background: #fff;
+    }
+    .preq{
+        background: #333;
+    }
+</style>
 <section data-background="/photos/{{ user }}/emc-typing-1.jpeg">
     <p>{{ nombre }} <br>{{ apellido }}</p>
     <p><small>...</small></p>
@@ -5,23 +13,104 @@
 </section>
 <section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 1</p>
+        <p class="pre">SIMPLIFICACIÓN DE CIRCUITOS</p>
     </section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 2</p>
+        <p class="pre">MAPAS DE KARNAUGH</p>
+        <p class="pre pra">
+            Los mapas de Karnaugh son una herramienta muy utilizada para la simplificación de los circuitos lógicos. Para poder simplificar un circuito a través de esta herramienta o técnica debemos de tener ciertos aspectos o reglas a considerar las cuales se detallan a continuación:
+        </p>
     </section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 3</p>
+        <p class="pre pra">
+            1-	Los elementos encendidos, es decir los 1 deben ser adyacentes.
+        </p>
+        <p class="pre pra">
+            2-	Las agrupaciones de 1 pueden ser de potencias de 2
+        </p>
+        <p class="pre pra">
+            3-	Las agrupaciones se pueden dar de la siguiente manera: Un 1 puede ser agrupado con un 1 que ya ha sido agrupado.
+        </p>
+        <p class="pre pra">
+            4-	Hacer la mayor agrupación de unos como sea posible.
+        </p>
     </section>
-</section>
-<section data-background="/photos/gray-carpet-and-white.jpg">
-    <p class="pre">Single Horizontal Slide 2</p>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">
+            Ejemplo:
+        </p>
+        <p class="pre pra">
+            Dada la siguiente tabla de la verdad, debe extraer la función  canónica y simplificarla hasta su mínima expresión usando los mapas de Karnaugh
+        </p>
+        <img src="/photos/{{ user }}/capture.png" alt="">
+        <p class="pre pra">
+            F(ABC)=A 'BC '+A 'BC+AB 'C '+AB 'C+ABC '+ABC
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <img src="/photos/{{ user }}/capture1.png" alt="">
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">
+            Encontrar la función lógica original de F(ABCD) ,
+            la función simplificada  y términos mínimos.
+        </p>
+        <img src="/photos/{{ user }}/capture2.png" alt="">
+        <img src="/photos/{{ user }}/capture3.png" alt="">
+    </section>
 </section>
 <section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 4</p>
+        <p class="pre">
+            SIMPLIFICACIÓN DE CIRCUITOS USANDO LOS TEOREMAS DE BOOLE
+        </p>
+        <img src="/photos/{{ user }}/capture4.png" alt="">
     </section>
+</section>
+<section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 5</p>
+        <p class="pre">
+            Simplificar : F(X)=A+AB+AB'C
+        </p>
+        <p class="pre pra">
+            Utilizamos el factor común. <br>
+            F(X)=A(1+B+B'C) <br>
+            Aplicando T2.A <br>
+            F(X)=A(1) <br>
+            Aplicando P2.B <br>
+            F(X)=A <br>
+
+        </p>
+
+    </section>
+</section>
+<section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">
+            Simplificar: F(X)=(AB'(C+BD)+A'B')C
+        </p>
+        <p class="pre pra">
+            Aplicamos la ley distributiva. <br>
+            F(X)=(AB 'C+AB 'BD+A 'B')C <br>
+            Aplicando P 6.B <br>
+            F(X)=(AB 'C+A(0)D+A 'B')C <br>
+
+            Aplicando T2.B <br>
+            F(X)=(AB 'C+0+A 'B')C <br>
+            F(X)=(AB 'C+A 'B')C <br>
+            Aplicando Ley distributiva <br>
+            F(X)=(AB 'CC+A 'B 'C) <br>
+            Aplicando T1.B <br>
+            F(X)=(AB 'C+A 'B 'C) <br>
+            Aplicando factor común. <br>
+            F(X)=B 'C(A+A') <br>
+            Aplicando P6.A <br>
+            F(X)=B 'C(1) <br>
+            Aplicando P2.B <br>
+
+            F(X)_Simplificado=B 'C
+
+        </p>
+
     </section>
 </section>

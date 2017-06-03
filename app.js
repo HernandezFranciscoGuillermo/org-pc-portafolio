@@ -46,7 +46,7 @@ var portf = require('./controllers/portafolio');
 var utils = require('./controllers/utilidades');
 var slide = require('./controllers/slide');
 var viewr = require('./controllers/viewer');
-
+var photo = require('./controllers/photos');
 
 /**
  *  Set-up views
@@ -144,7 +144,7 @@ app.use('/portafolio', portf);
 app.use('/utilidades', utils);
 app.use('/slide', slide);
 app.use('/viewer', viewr);
-
+app.use('/photos', photo);
 /**
  * catch 404 and forward to errors handler
  */
@@ -172,9 +172,9 @@ app.use(function(err, req, res, next) {
 
   // render the errors page
   res.status(err.status || 500);
-  //res.render('error');
+  res.render('error');
 
-  res.render('errors/505', {layout: 'layouts/errors', title: '404', description:"No encontrado"});
+  //res.render('errors/500', {layout: 'layouts/errors', title: '500', description:"No encontrado"});
 });
 
 module.exports = app;

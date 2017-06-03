@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/doc', function(req, res) {
-  var file = req.param('file');
+  var file = req.query.file;
   var ftitle = xssFilters.inHTMLData(file);
 
   if(file==null){

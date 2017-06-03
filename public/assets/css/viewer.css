@@ -1,0 +1,21 @@
+.viewer{
+    display: block; margin:0 auto;
+}
+.cls{
+    /*background-color: #FAFAFA;*/
+    background-color: #F6F5F6;
+    color: #6F6F6F;
+    z-index: 99999999999;
+}
+.button-nav-dark{
+    color: #6F6F6F;
+}
+.button-nav-dark:hover{
+    background-color: #fff;
+}
+
+.navg{
+    top:7%;
+    height: 100%;
+    background-color: #fff;
+}

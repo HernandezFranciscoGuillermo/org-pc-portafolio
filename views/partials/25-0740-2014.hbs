@@ -1,3 +1,11 @@
+<style>
+    .pra{
+        background: #fff;
+    }
+    .preq{
+        background: #333;
+    }
+</style>
 <section data-background="/photos/{{ user }}/picjumbo.com_IMG_3649.jpg">
     <p>{{ nombre }} <br>{{ apellido }}</p>
     <p><small>...</small></p>
@@ -5,23 +13,321 @@
 </section>
 <section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 1</p>
+        <p class="pre">FUNCIÓN LÓGICA O BOOLEANA.</p>
+        <p class="pre pra">
+            Una función lógica o booleana es una expresión algebraica constituida por variables binarias,
+            los operadores lógicas, operaciones como la suma, producto, complemento y elementos de agrupación como paréntesis.
+        </p>
     </section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 2</p>
+        <p class="pre">La función es representada como:</p>
+        <p class="pre pra">
+            F(ABC)
+        </p>
     </section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 3</p>
+        <p class="pre pra">
+            En donde el valor lógico de F está en función de sus variables es decir ABC,
+            en el paréntesis que compone la declaración de la función lógica es donde se establece o determina cuantas variables son las que irán en el circuito o tabla de la verdad y se establece en forma más clara el orden de las variables de entrada en la tabla de la verdad.
+        </p>
     </section>
-</section>
-<section data-background="/photos/gray-carpet-and-white.jpg">
-    <p class="pre">Single Horizontal Slide 2</p>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Ejemplo:</p>
+        <p class="pre pra">
+            F(AB)=A+A'B' +B'</p>
+    </section>
 </section>
 <section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 4</p>
+        <p class="pre">FORMAS DE UNA FUNCIÓN LÓGICA.</p>
+        <p class="pre pra">
+            •	Forma canónica: Es aquella función lógica en la que expresa cada uno de sus términos todas las variables en sus diferentes estados directos e inversos.
+        </p>
     </section>
     <section data-background="/photos/gray-carpet-and-white.jpg">
-        <p class="pre">Vertical Slide 5</p>
+        <p class="pre">Ejemplo:</p>
+        <p class="pre pra">
+            F(AB)=A+A'B'+B
+        </p>
+    </section>
+</section>
+<section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Términos mínimos.</p>
+        <p class="pre pra">
+            Este forma de expresión se conoce también como Suma de Productos (SP) y se encuentra conformada exclusivamente por operadores OR
+            en términos de productos MINTERM que se encuentran relacionados a cada una de las combinaciones de tablas de verdad y su resultado.
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">TIP:</p>
+        <p class="pre pra">
+            La función canónica expresada en  términos mínimos podemos extraerla de una tabla de la verdad a partir de aquellas combinaciones cuyo resultado sea igual a 1.
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Ejemplo:</p>
+        <p class="pre pra">
+            F(ABC) = ABC+A'B'C+AB'C'+A'B'C' </p>
+    </section>
+</section>
+<section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Términos máximos.</p>
+        <p class="pre pra">
+            Esta forma de expresión se conoce también como Productos de la suma (PS) y se encuentra conformado exclusivamente por operadores AND en términos de suma.
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">TIP:</p>
+        <p class="pre pra">
+            La función canónica expresada en  términos máximos podemos extraerla de una tabla de la verdad a partir de aquellas combinaciones cuyo resultado sea igual a 0.
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Ejemplo:</p>
+        <p class="pre pra">
+            F(ABC)=(A+B+C)*(A'+B+C')*(A+B'+C)*(A'+B'+C' )
+        </p>
+    </section>
+</section>
+<section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">GENERANDO TABLA DE LA VERDAD A PARTIR DE UNA FUNCIÓN CANÓNICA</p>
+        <p class="pre pra">
+            A partir de una función dada genere su tabla de la verdad.
+            F(ABC)=AB'C+A'BC'+A'B' C'
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Explicación:</p>
+        <p class="pre pra">
+            •	Dada una función, identificamos que es una función canónica, así como la función de ejemplo.
+        </p>
+        <p class="pre pra">
+            •	Luego, debemos determinar si esta está expresada en términos máximos o términos mínimos
+        </p>
+        <p class="pre pra">
+            TÉRMINOS MÍNIMOS(SP)
+            F(XYZ)=X+Y+Z
+            <br>
+            TÉRMINOS MÁXIMOS (SP)
+           	F(XYZ)=(X+Y)*(X+Y+Z)*(Z+Y)
+
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <table class="preq">
+            <tr>
+                <td>F(ABC)</td>
+                <td>AB'C</td>
+                <td>A'BC'</td>
+                <td>A'B'C'</td>
+            </tr>
+            <tr>
+                <td>BINARIO</td>
+                <td>101</td>
+                <td>010</td>
+                <td>000</td>
+            </tr>
+            <tr>
+                <td>DECIMAL</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+        </table>
+
+        <p class="pre pra">
+            F(ABC)=∑_3(5,2,0)
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre pra">
+            Una vez hemos determinado cuales son las combinaciones, procedemos a generar la tabla de la verdad.
+            Dado que la función brindada es una función canónica expresada en términos mínimos,
+            las combinaciones que nos han dado cada término tendrán como valor de salida 1.
+        </p>
+    </section>
+
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <table class="preq">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>F(ABC)</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </section>
+</section>
+<section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">COMPLEMENTO.</p>
+        <p class="pre pra">
+            Si se nos da una función lógica en la cual encontramos que en sus términos no se encuentran todas las variables de la función,
+            debemos utilizar un complemento para poder expresar cada término de la función con todas las variables involucradas.
+        </p>
+
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre pra">
+            COMPLEMENTO∶   A+A' =1
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Ejemplo:</p>
+        <p class="pre pra">
+            F(ABC)=AB 'C '+AB '+A 'C+AB 'C <br>
+        </p>
+        <p class="pre pra">
+            Aplicamos el complemento a aquellos términos de la función a los que les falta una variable. <br>
+            F(ABC)=AB 'C '+AB '(C+C ')+A 'C(B+B ')+AB 'C <br>
+        </p>
+        <p class="pre pra">
+            Aplicamos la propiedad distributiva. <br>
+            F(ABC)=AB 'C '+AB 'C+AB 'C '+A 'BC+A 'B 'C+AB 'C <br>
+        </p>
+        <p class="pre pra">
+            Eliminamos uno de los términos que se repiten en la función. <br>
+            F(ABC)=AB 'C '+AB 'C+AB 'C '+A 'BC+A 'B 'C+AB 'C <br>
+            F(ABC)=AB 'C '+AB 'C+A 'BC+A 'B 'C <br>
+
+        </p>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre">Generando la tabla de la verdad de la función resultante</p>
+        <table class="preq">
+            <tr>
+                <td>F(ABC)</td>
+                <td>AB'C'</td>
+                <td>AB'C</td>
+                <td>A'BC</td>
+                <td>A'B'C</td>
+            </tr>
+            <tr>
+                <td>BINARIO</td>
+                <td>100</td>
+                <td>101</td>
+                <td>011</td>
+                <td>001</td>
+            </tr>
+            <tr>
+                <td>DECIMAL</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </section>
+    <section data-background="/photos/gray-carpet-and-white.jpg">
+        <p class="pre pra">
+            F(ABC)=∑_3(4,5,3,1)
+        </p>
+        <table class="preq">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>F(ABC)</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </table>
     </section>
 </section>

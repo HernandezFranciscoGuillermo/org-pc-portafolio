@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/assets/css/photos.css">
+<div class="container">
+    <div class="col-sm-12">
+        <h1 class="text-center">Photos</h1>
+    </div>
+</div>
+<div class="container">
+    <div id="slides">
+        <img src="/photos/integrantes/IMAG0104.jpg" alt="">
+        <img src="/photos/integrantes/IMAG0106.jpg" alt="">
+        <img src="/photos/integrantes/IMAG0107.jpg" alt="">
+        <img src="/photos/integrantes/IMAG0108.jpg" alt="">
+        <img src="/photos/integrantes/IMG20170527.jpg" alt="">
+    </div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/jquery.slides.min.js"></script>
+<script>
+    try{
+        $('#slides').slidesjs({
+            width: 940,
+            height: 528,
+            play: {
+                active: true,
+                auto: true,
+                interval: 4000,
+                swap: true
+            }
+        });
+    }catch (e){
+
+    }
+</script>

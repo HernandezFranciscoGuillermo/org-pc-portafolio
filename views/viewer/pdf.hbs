@@ -6,44 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title}}</title>
     <link rel="stylesheet" href="/assets/css/basscss.css">
-    <style>
-        .viewer{
-            display: block; margin:0 auto;
-        }
-        .cls{
-            /*background-color: #FAFAFA;*/
-            background-color: #F6F5F6;
-            color: #6F6F6F;
-            z-index: 99999999999;
-        }
-        .button-nav-dark{
-            color: #6F6F6F;
-        }
-        .button-nav-dark:hover{
-            background-color: #fff;
-        }
-
-        .navg{
-            top:7%;
-            height: 100%;
-            background-color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/viewer.css">
 </head>
-<body >
-
+<body>
 <div class="container" ng-controller="AppCtrl">
     <div class="">
-
         <pdf-viewer
                 delegate-handle="my-pdf-container"
                 url="pdfUrl"
                 scale="1"
                 show-toolbar="true"
                 headers="{'x-you-know-whats-awesome': 'EVERYTHING'}"></pdf-viewer>
-
-
-
     </div>
 </div>
 <!--<script src="/libs/pdfjs-dist/build/pdf.combined.js"></script>-->
@@ -55,17 +28,16 @@
 <!--<script src="/assets/js/viewer/pdf-viewer.js"></script>-->
 <!--<script src="/assets/js/viewer/pdf-viewer-toolbar.js"></script>-->
 <script src="/assets/js/dist/f3fe9466-6bad-46cb-9783-cec1226c2bba-e8f5d2ec-15cf-4ad7-8280-f9e528bde5bb.min.js"></script>
-
 <script>
-    angular.module('testApp',['pdf'])
+    angular.module('testApp', ['pdf'])
             .controller('AppCtrl', [
                 '$scope',
                 'pdfDelegate',
                 '$timeout',
-                function($scope, pdfDelegate, $timeout) {
+                function ($scope, pdfDelegate, $timeout) {
                     $scope.pdfUrl = '/documentos/pdf/{{ file }} ';
 
-                    $scope.loadNewFile = function(url) {
+                    $scope.loadNewFile = function (url) {
                         pdfDelegate
                                 .$getByHandle('my-pdf-container')
                                 .load(url);
@@ -73,7 +45,6 @@
                     $scope.loadNewFile('/documentos/pdf/{{ file }}');
 
                 }]);
-
 </script>
 </body>
 </html>

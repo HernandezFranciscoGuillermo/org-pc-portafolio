@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     concat: {
       css: {
         src: [
-          'public/assets/css/effect2.css',
+          //'public/assets/css/effect2.css',
           'public/libs/bootstrap/dist/css/bootstrap.min.css',
           'public/assets/icons/style.css',
           'public/assets/css/icononav.css',
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
         src: [
           'public/libs/jquery/dist/jquery.min.js',
           'public/assets/js/scripts.min.js',
-          'public/libs/jquery.nicescroll/jquery.nicescroll.min.js',
+          //'public/libs/jquery.nicescroll/jquery.nicescroll.min.js',
           'public/assets/js/modernizr.custom.js',
           'public/assets/js/classie.js',
           'public/assets/js/pathLoader.js',
