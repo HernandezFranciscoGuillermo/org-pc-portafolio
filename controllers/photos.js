@@ -10,9 +10,9 @@ var basic = auth.basic({
 });
 
 var authMiddleware = auth.connect(basic);
+//,authMiddleware
 
-
-router.get('/', authMiddleware, function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('portafolio/photos', {layout: 'layouts/portafolio', title: 'index', description:"Portafolio"});
 });
 
